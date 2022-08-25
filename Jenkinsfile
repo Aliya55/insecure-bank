@@ -77,7 +77,7 @@ pipeline {
             steps {
                 script {
                     cleanWs()
-                    def scmURL = "https://${GITHUB_ACCESS_TOKEN}@github.com/${gitHubOwner}/${scmRepoName}"
+                    def scmURL = "https://github.com/${gitHubOwner}/${scmRepoName}"
                     git branch: scmBranch, url: scmURL
                 }
             }
