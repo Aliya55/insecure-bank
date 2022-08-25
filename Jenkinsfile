@@ -2,11 +2,11 @@ import groovy.json.JsonOutput
 import groovy.json.JsonSlurper
 
 // File Enviroment
-def fileProjectName = 'insecure-bank'
+// def fileProjectName = 'insecure-bank'
 def fileBranchName = 'master'
 // IO Environment
 def ioPOCId = 'io-25-poc'
-def ioProjectName = fileProjectName
+def ioProjectName = 'Test-AF'
 def ioWorkflowEngineVersion = '2022.7.1'
 def ioServerURL = "https://io25.codedx.synopsys.com"
 def ioRunAPI = "/api/ioiq/api/orchestration/runs/"
@@ -20,12 +20,12 @@ def scmRevisionDate = ''
 
 // AST - Polaris
 def polarisConfigName = 'polaris-sipse'
-def polarisProjectName = fileProjectName
+def polarisProjectName = 'my-insecure-bank'
 def polarisBranchName = fileBranchName
 
 // AST - Black Duck
 def blackDuckPOCId = 'blackduck-testing'
-def blackDuckProjectName = fileProjectName
+def blackDuckProjectName = 'insecure-bank'
 def blackDuckProjectVersion = fileBranchName
 
 // BTS Configuration
