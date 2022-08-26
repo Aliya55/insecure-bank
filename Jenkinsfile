@@ -29,8 +29,8 @@ def blackDuckProjectName = 'insecure-bank'
 def blackDuckProjectVersion = fileBranchName
 
 // BTS Configuration
-// def jiraAssignee = 'johnd'
-// def jiraConfigName = 'jira-poc10'
+ // def jiraAssignee = 'admin'
+ // def jiraConfigName = 'jira-poc25'
 // def jiraIssueQuery = 'resolution=Unresolved'
 // def jiraProjectKey = 'IRMOB'
 // def jiraProjectName = 'IRMOB'
@@ -106,12 +106,7 @@ pipeline {
                         configName: gitHubPOCId,
                         owner: gitHubOwner,
                         repositoryName: scmRepoName),
-                    jira(
-                        assignee: jiraAssignee,
-                        configName: jiraConfigName,
-                        issueQuery: jiraIssueQuery,
-                        projectKey: jiraProjectKey,
-                        projectName: jiraProjectName)
+ 
                     ]) {
                         sh 'io --stage io'
                     }
