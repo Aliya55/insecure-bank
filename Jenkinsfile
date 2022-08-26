@@ -29,11 +29,11 @@ def blackDuckProjectName = 'insecure-bank'
 def blackDuckProjectVersion = fileBranchName
 
 // BTS Configuration
-def jiraAssignee = 'johnd'
-def jiraConfigName = 'jira-poc10'
-def jiraIssueQuery = 'resolution=Unresolved'
-def jiraProjectKey = 'IRMOB'
-def jiraProjectName = 'IRMOB'
+// def jiraAssignee = 'johnd'
+// def jiraConfigName = 'jira-poc10'
+// def jiraIssueQuery = 'resolution=Unresolved'
+// def jiraProjectKey = 'IRMOB'
+// def jiraProjectName = 'IRMOB'
 
 // Code Dx Configuration
 def codeDxConfigName = 'codedx-io-25'
