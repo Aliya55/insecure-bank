@@ -36,7 +36,7 @@ def blackDuckProjectVersion = fileBranchName
 // def jiraProjectName = 'IRMOB'
 
 // Code Dx Configuration
-def codeDxConfigName = 'codedx-io-25'
+def codeDxConfigName = 'codedx-io25'
 def codeDxProjectId = '1'
 def codeDxInstnceURL = 'https://poc25.codedx.synopsys.com/codedx'
 def codeDxProjectAPI = '/api/projects/'
