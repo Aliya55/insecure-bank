@@ -2,7 +2,7 @@ version: 0.2
 env:
   shell: bash
   parameter-store:
-    SYNOPSYS_IO_codedx_instanceurl: SYNOPSYS_IO_codedx_instanceurl
+    SYNOPSYS_IO_codedx_instanceurl: SYNOPSYS_IO_codedx_instanceurlt
     SYNOPSYS_IO_codedx_projectid:  SYNOPSYS_IO_codedx_projectid
     SYNOPSYS_IO_Workflow_Engine_Version: SYNOPSYS_IO_Workflow_Engine_Version
     
