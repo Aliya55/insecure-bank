@@ -1,10 +1,10 @@
 version: 0.2
 env:
   shell: bash
-  variables:
-    SYNOPSYS_IO_codedx_instanceurl: http://codedx.leapaws.com.au:8080/codedx
-    SYNOPSYS_IO_codedx_projectid: '1'
-    SYNOPSYS_IO_Workflow_Engine_Version: '2022.7.0'
+  parameter-store:
+    SYNOPSYS_IO_codedx_instanceurl: SYNOPSYS_IO_codedx_instanceurl
+    SYNOPSYS_IO_codedx_projectid:  SYNOPSYS_IO_codedx_projectid
+    SYNOPSYS_IO_Workflow_Engine_Version: SYNOPSYS_IO_Workflow_Engine_Version
     
 
   build:
