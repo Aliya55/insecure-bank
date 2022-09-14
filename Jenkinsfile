@@ -5,14 +5,14 @@ import groovy.json.JsonSlurper
 // def fileProjectName = 'insecure-bank'
 def fileBranchName = 'master'
 // IO Environment
-def ioPOCId = 'IO-POC-25'
-def ioProjectName = 'Test-AF'
+def ioPOCId = 'io-poc-23'
+def ioProjectName = 'poc-23'
 def ioWorkflowEngineVersion = '2022.7.0'
-def ioServerURL = "https://io25.codedx.synopsys.com"
+def ioServerURL = "https://io23.codedx.synopsys.com"
 def ioRunAPI = "/api/ioiq/api/orchestration/runs/"
 
 // SCM - GitHub
-def gitHubPOCId = 'poc-25-github'
+def gitHubPOCId = 'poc-23-github'
 def gitHubOwner = 'Aliya55'
 def scmBranch = fileBranchName
 def scmRepoName = 'insecure-bank'
@@ -24,21 +24,21 @@ def polarisProjectName = 'my-insecure-bank'
 def polarisBranchName = fileBranchName
 
 // AST - Black Duck
-def blackDuckPOCId = 'blackduck-testing'
+def blackDuckPOCId = 'blackduck-test'
 def blackDuckProjectName = 'insecure-bank'
 def blackDuckProjectVersion = fileBranchName
 
 // BTS Configuration
- // def jiraAssignee = 'admin'
- // def jiraConfigName = 'jira-poc25'
-// def jiraIssueQuery = 'resolution=Unresolved'
-// def jiraProjectKey = 'IRMOB'
-// def jiraProjectName = 'IRMOB'
+ def jiraAssignee = 'admin'
+ def jiraConfigName = 'poc-jira-23'
+ def jiraIssueQuery = 'resolution=Unresolved'
+ def jiraProjectKey = 'DEV'
+ def jiraProjectName = 'devops'
 
 // Code Dx Configuration
-def codeDxConfigName = 'codedx-io25'
+def codeDxConfigName = 'code-dx-23'
 def codeDxProjectId = '1'
-def codeDxInstnceURL = 'https://poc25.codedx.synopsys.com/codedx'
+def codeDxInstnceURL = 'https://poc23.codedx.synopsys.com/codedx'
 def codeDxProjectAPI = '/api/projects/'
 def codeDxAnalysisEndpoint = '/analysis'
 def codeDxProjectContext = codeDxProjectId + ';branch=' + fileBranchName
@@ -71,7 +71,7 @@ pipeline {
 
     stages {
         
-        stage('Checkout') {
+        /* stage('Checkout') {
             environment {
                 GITHUB_ACCESS_TOKEN = credentials("${gitHubPOCId}")
             }
@@ -82,7 +82,7 @@ pipeline {
                     git branch: scmBranch, url: scmURL
                 }
             }
-        }
+        } */
 
         stage('Build') {
             steps {
